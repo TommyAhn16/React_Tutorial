@@ -6,6 +6,6 @@
 
 ### 1. Set up the app
 
-```console
+```shell
 npx create-react-app tic-tac-toe
 ```
