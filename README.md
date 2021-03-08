@@ -23,7 +23,7 @@ npx create-react-app tic-tac-toe
 
 - sample code:
 
-```React
+```JavaScript
 class ShoppingList extends React.Component {
   render() {
     return (
