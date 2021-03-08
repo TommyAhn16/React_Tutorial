@@ -41,3 +41,13 @@ class ShoppingList extends React.Component {
 
 // Example usage: <ShoppingList name="Mark" />
 ```
+
+**Note: JSX**
+
+- special syntax in React
+- "Javascript" + "XML
+- example:
+
+```JavaScript
+<div example />
+```
