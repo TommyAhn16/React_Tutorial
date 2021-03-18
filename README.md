@@ -107,3 +107,7 @@ class Square extends React.Component {
 ```
 
 - Note: In JavaScript classes, you need to always call super when defining the constructor of a subclass. All React component classes that have a constructor should start with a super(props) call.
+
+- When you call `setState` in a component, React automatically updates the child components inside of it too.
+
+- To collect data from multiple children, or to have two child components communicate with each other, you need to declare the shared state in their parent component instead. The parent component can pass the state back down to the children by using props; this keeps the child components in sync with each other and with the parent component.
