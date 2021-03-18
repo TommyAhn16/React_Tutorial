@@ -51,3 +51,59 @@ class ShoppingList extends React.Component {
 ```JavaScript
 <div example />
 ```
+
+### 2. Passing Data Through Props
+
+example
+
+```JavaScript
+class Board extends React.Component {
+  renderSquare(i) {
+    return <Square value={i} />;
+  }
+}
+```
+
+`value` is the prop being passed
+
+```JavaScript
+class Square extends React.Component {
+  render() {
+    return (
+      <button className="square">
+        {this.props.value}
+      </button>
+    );
+  }
+}
+```
+
+### 3. Making an Interactive Component
+
+`To “remember” things, components use state.`
+
+- add a constructor to the class to initialize the state
+
+```Javascript
+class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
+  render() {
+    return (
+      <button
+        className="square"
+        onClick={() => this.setState({value: 'X'})}
+      >
+        {this.state.value}
+      </button>
+    );
+  }
+}
+```
+
+- Note: In JavaScript classes, you need to always call super when defining the constructor of a subclass. All React component classes that have a constructor should start with a super(props) call.
